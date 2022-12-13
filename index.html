@@ -2,6 +2,36 @@
 <html>
 <head>
 	<title>Portfolio website</title>
+
+	<!-- Start of Async Drift Code -->
+<script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('bx2y9br2555r');
+	</script>
+	<!-- End of Async Drift Code -->
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,13 +47,13 @@
 		<nav>
 			<h2 class="logo">Portfo<span>lio</span></h2>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="contact\index.html">Contact Us</a></li>
 			</ul>
-			<a href="#" class="btn">Subscribe</a>
+			<a href="profilecard/index.html" class="btn">Contact</a>
 		</nav>
 
 		<div class="content">
@@ -33,7 +63,7 @@
 			<div class="newslatter">
 				<form>
 					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Lets Start">
+					<button><a href="mailto:umeshsuwal98@gmail.com">Mail</a></button>
 				</form>
 			</div>
 		</div>
@@ -55,42 +85,41 @@
 	<!-----service section start----------->
 	<div class="service">
 		<div class="title">
-			<h2>Our Services</h2>
+			<h2>Services</h2>
 		</div>
 
 		<div class="box">
 			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Web Development</h5>
+				<i class="fas fa-clock"></i>
+				<h5>Digital Clock</h5>
 				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
+					<p>A Digital Clock builded with the help of HTML,CSS,JAVASCRIPT.This Project was created for a Digital Clock Platform.</p>
 					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+						<a class="button" href="smart watch\index.html">Visit</a>
 					</p>
 				</div>
 			</div>
 
 			<div class="card">
 				<i class="far fa-user"></i>
-				<h5>Sign Up</h5>
+				<h5>Sign Up </h5>
 				<div class="pra">
-					<p>A Sign Up Page designed using HTML,CSS,JAVASCRIPT. Other Languages like PHP and SQL is also used in this Project.</p>
+					<p>A Sign Up page builded with the help of HTML,CSS,JAVASCRIPT.This Project was created for a Sign Up Platform.</p>
 
 					<p style="text-align: center;">
-						<a class="button" href="login.html">Visit</a>
+						<a class="button" href="signup\login.html">Visit</a>
 					</p>
 				</div>
 			</div>
 
 			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Web Development</h5>
+				<i class="far fa-play-circle"></i>
+				<h5>Music Player </h5>
 				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+					<p>A Music Player builded with the help of HTML,CSS,JAVASCRIPT.This Project was created for a Music Player Platform.</p>
 
 					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+						<a class="button" href="Musicplayer\music.html">Visit</a>
 					</p>
 				</div>
 			</div>
@@ -99,20 +128,20 @@
 
 	<!------Contact Me------>
 	<div class="contact-me">
-		<p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
+		<p>Check Some of My illustrator and Vector Arts.</p>
+		<a class="button-two" href="#">Check</a>
 	</div>
 
 	<!------footer start--------->
 	<footer>
 		<p>Umesh Suwal</p>
-		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
+		<p>For more HTML, CSS, and JAVASCRIPT Projects - Stay Connected with ME.</p>
 		<div class="social">
 			<a href="https://www.facebook.com/umesh.suwal.98"><i class="fab fa-facebook-f"></i></a>
 			<a href="https://www.instagram.com/umesh_suwal/"><i class="fab fa-instagram"></i></a>
 			<a href="https://twitter.com/UmeshSuwal4"><i class="fab fa-twitter"></i></a>
 		</div>
-		<p class="end">CopyRight By Umesh Suwal</p>
+		<p class="end">CopyRight &copy; 2022 By Umesh Suwal</p>
 	</footer>
 </body>
 </html>
